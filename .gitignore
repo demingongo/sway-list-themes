@@ -1,0 +1,3 @@
+*.bck
+zig-cache/
+zig-out/
