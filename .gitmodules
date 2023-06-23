@@ -1,0 +1,3 @@
+[submodule "vendor/ini"]
+	path = vendor/ini
+	url = https://github.com/ziglibs/ini
