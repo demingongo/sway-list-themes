@@ -102,7 +102,7 @@ pub fn display_main_info(themes_dir: []const u8, theme_name: []const u8) !void {
     theme_conf = concat4.result;
     defer concat4.deinit();
 
-    const concat5 = try concat_u8(theme_conf, "/config/theme.conf");
+    const concat5 = try concat_u8(theme_conf, "/theme.ini");
     theme_conf = concat5.result;
     defer concat5.deinit();
 
@@ -127,7 +127,7 @@ pub fn main() !void {
 
     const HOME_DIR = env_vars.get("HOME") orelse "";
 
-    const concat1 = try concat_u8(HOME_DIR, "/.config/sway");
+    const concat1 = try concat_u8(HOME_DIR, "/.config/hypr");
     const SWAY_DIR = concat1.result;
     defer concat1.deinit();
 
